@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="snake" width="512" height="512" style="display: none"></canvas>
+  <button id="restartBtn" style="display: none">Restart</button>
+  <audio id="eatSound" src="./sounds/WGQ4BSS-chew-candy-15747 (1).mp3" preload="auto"></audio>
+  <audio id="gameOverSound" src="./sounds/negative_beeps-6008.mp3" preload="auto"></audio>
+  <audio id="backgroundMusic" src="./sounds/573_full_cutie-8bit_0152_preview.mp3" preload="auto" loop></audio>
+  <img id="appleImg" src="./assets/apple.png" style="display: none" />
+  <div id="startScreen">
+    <h1>Snake Game</h1>
+    <h2>How to play:</h2>
+    <p>Use the arrow keys or on-screen buttons to move the snake.</p>
+    <p>Eat the red fruits to grow and earn points.</p>
+    <p>Avoid colliding with the walls or the snake's own body!</p><br>
+    <button id="startBtn">Start game</button><br>
+  </div>
+  <div class="controls" style="display: none">
+    <div class="arrow-container">
+      <div class="arrow-row">
+        <button class="arrow" id="up">&#8593;</button>
+      </div>
+      <div class="arrow-row">
+        <button class="arrow" id="left">&#8592;</button>
+        <button class="arrow" id="right">&#8594;</button>
+      </div>
+      <div class="arrow-row">
+        <button class="arrow" id="down">&#8595;</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

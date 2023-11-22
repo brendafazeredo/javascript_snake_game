@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url("./assets/snake.jpg") no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+canvas {
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+}
+  
+#startScreen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 24px;
+    color: black;
+}
+  
+#startBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    border: none;
+    color: black;
+}
+  
+#restartBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4caf50;
+    border: none;
+    color: white;
+}
+  
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+  
+.arrow-container {
+    display: flex;
+    flex-direction: column;
+}
+  
+.arrow-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+}
+  
+.arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+    border: none;
+    margin: 0 5px;
+}
+  
+#startScreen h1,
+#startScreen h2 {
+    display: block;
+    font-size: 32px;
+}
+  
+@media only screen and (max-width: 600px) {
+    body {
+      background: #64a464;
+}
+  
+#startScreen h1,
+    #startScreen h2 {
+      font-size: 20px;
+}
+  
+canvas {
+    width: 100%;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vw;
+    border: 2px solid black;
+    display: block;
+    margin: 0 auto;
+    background-color: black;
+}
+  
+#startScreen h1,
+#startScreen h2,
+#startScreen p,
+#startScreen button,
+#startScreen i {
+    font-size: 16px;
+    margin: 5px;
+}
+  
+#startScreen h1 {
+    font-size: 24px;
+}
+  
+.controls {
+    margin-top: 10px;
+}
+  
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+ .arrow-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+  
+.arrow {
+      width: 60px;
+      height: 60px;
+      font-size: 32px;
+      margin: 5px;
+}
+}
